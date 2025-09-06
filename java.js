@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'PIToRRO DE COCO',
             artist: 'Bad Bunny',
             album: 'Debí Tirar Más Fotos',
-            artwork: 'https://cdn.pixabay.com/photo/2023/08/10/20/20/ai-generated-8182336_960_720.png'
+            artwork: 'https://placehold.co/800?text=MV&font=roboto'
         }
     ];
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 artist: song.artist,
                 album: song.album,
                 artwork: [
-                    { src: song.artwork, sizes: '512x512', type: 'image/png' }
+                    { src: song.artwork, sizes: '800x800', type: 'image/png' }
                 ]
             });
 
@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navigator.mediaSession.setActionHandler('pause', () => audioPlayer.pause());
             navigator.mediaSession.setActionHandler('nexttrack', nextSong);
             navigator.mediaSession.setActionHandler('previoustrack', prevSong);
-
         }
     };
 
