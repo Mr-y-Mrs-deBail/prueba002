@@ -1,0 +1,159 @@
+ body {
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.album-art {
+    width: 250px;
+    height: 250px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+#song-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 0.25rem;
+}
+
+#artist-name {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.progress {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #e9ecef;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.media-controls .btn {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#play-pause-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+#play-pause-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+.player-container {
+padding: 4rem 0.75rem;
+}
+
+.album-art {
+    width: 200px;
+    height: 200px;
+}
+
+#song-title {
+    font-size: 1.4rem;
+}
+
+#artist-name {
+    font-size: 1rem;
+}
+
+.media-controls .btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+}
+
+#play-pause-btn {
+    width: 65px;
+    height: 65px;
+    font-size: 1.8rem;
+}
+
+}
+
+@media (max-width: 480px) {
+.player-container {
+padding: 4rem 0.75rem;
+}
+
+.album-art {
+    width: 180px;
+    height: 180px;
+    border-radius: 0.75rem;
+}
+
+#song-title {
+    font-size: 1.2rem;
+}
+
+#artist-name {
+    font-size: 0.9rem;
+}
+
+.media-controls .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin: 0 8px;
+}
+
+#play-pause-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+}
+
+}
