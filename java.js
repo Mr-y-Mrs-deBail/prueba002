@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'PIToRRO DE COCO',
             artist: 'Bad Bunny',
             album: 'Debí Tirar Más Fotos',
-            artwork: 'https://placehold.co/800?text=MV&font=roboto'
+            artwork: 'img/album-art.jpg' 
         }
     ];
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 artist: song.artist,
                 album: song.album,
                 artwork: [
-                    { src: song.artwork, sizes: '800x800', type: 'image/png' }
+                    { src: song.artwork, sizes: '800x800', type: 'image/jpeg' }
                 ]
             });
 
