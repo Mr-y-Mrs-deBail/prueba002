@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'PIToRRO DE COCO',
             artist: 'Bad Bunny',
             album: 'Debí Tirar Más Fotos',
-            artwork: 'img/album-art.jpg' 
+            artwork: 'https://mr-y-mrs-debail.github.io/prueba002/img/album-art.jpg'
         }
     ];
 
@@ -80,12 +80,16 @@ document.addEventListener('DOMContentLoaded', () => {
     audioPlayer.addEventListener('play', () => {
         playPauseIcon.classList.remove('bi-play-fill');
         playPauseIcon.classList.add('bi-pause-fill');
-        navigator.mediaSession.playbackState = 'playing';
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.playbackState = 'playing';
+        }
     });
     audioPlayer.addEventListener('pause', () => {
         playPauseIcon.classList.remove('bi-pause-fill');
         playPauseIcon.classList.add('bi-play-fill');
-        navigator.mediaSession.playbackState = 'paused';
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.playbackState = 'paused';
+        }
     });
     
     audioPlayer.addEventListener('timeupdate', () => {
